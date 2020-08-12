@@ -9,27 +9,30 @@ width:30px;
     height:20px;
     width:30px;
 }
+.about-border
+{
+    border-radius: 10px;
+    box-shadow: 15px 5px 20px rgb(218, 208, 208);
+}
 .navbar{
     background: transparent;
     z-index:1;
 }
 .intro-image
 {
-    height:100vh;
+
     width:100vw;
     z-index:-1;
     margin-top:-20px;
 }
 .image-container
 {
-    border:2px solid black;
-    z-index:3;
+
 }
 .intro-para
 {
     color:white;
     position: absolute;
-    border:2px solid green;
     font-size:15px;
     margin-top:25%;
 }
@@ -37,11 +40,35 @@ width:30px;
 {
     font-size:10px;
 }
+.about-me
+{
+    display:inline-block; 
+    margin-top:20px;
+    margin-left:5%;
+    
+}
+.images-sphere
+{
+    border-radius: 50%;
+    box-shadow:5px 5px 20px rgb(218, 208, 208);
+}
 @media all and (min-width:320px)
 {
+    .images-sphere{
+        width:50%;
+        height:200px;
+        margin-left:20%;
+    }
+    .about-me
+    {
+        margin-left:0;
+        height:300px;
+
+    }
     .intro-para
 {
     top:2em;
+    height:px;
 }
     .navbar{
 
@@ -67,7 +94,15 @@ width:30px;
 }
 @media all and (min-width:720px)
 {
-   
+  .about-me
+  {
+      height:200px;
+      margin-left:5%;
+  }
+  .images-sphere{
+    width:100%;
+    height:150px;
+}
     .navbar-brand
     {
         height:80px;
@@ -108,6 +143,15 @@ width:80px;
 }
 @media all and (min-width:1200px)
 {
+    .about-me
+  {
+      height:200px;
+      margin-left:5%;
+  }
+  .images-sphere{
+    width:60%;
+    height:150px;
+}
   
     .navbar
     {
