@@ -54,7 +54,8 @@ width:30px;
 }
 .about-heading
 {
-    font-size:20px;
+    font-size:30px;
+    font-family: 'Courier New', Courier, monospace;
 }
 @media all and (min-width:320px)
 {
@@ -67,6 +68,7 @@ width:30px;
     {
         margin-left:0;
         height:300px;
+        margin-top:10px;
 
     }
     .intro-para
