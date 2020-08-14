@@ -26,7 +26,7 @@
       <div class='image-container intro-image img-fluid'>
       <img src="final-images/intro-image.jpg" class="intro-image img-fluid" alt="Responsive image"><div class='intro-para'>
 <div id ='text' class='intro-hello '></div>
-I  am Sooraj Sivadas an undergrad in electrical engineering<div class='small-para'>Although i am a passionate Web developer and an artist</div>
+<div id='text1'></div><div class='small-para'>Although i am a passionate Web developer and an artist</div>
       </div></div>
       <div class='about-me col-xs-12 col-sm-2 col-md-4'><img class='images-sphere ' src='final-images/image-about.JPG' alt = 'my-photo'></div>
       <div class='about-me about-border col-xs-12 col-sm-8 col-md-6'><div class='about-heading'>About me</div>I was born and bought up in the city of kochin,kerala<br>
@@ -62,8 +62,11 @@ I  am Sooraj Sivadas an undergrad in electrical engineering<div class='small-par
   <div id='text'></div>
   <script>   
     var string = "Hello There!"; /* type your text here */
+    var string1 = "I  am Sooraj Sivadas an undergrad in electrical engineering";
+    var array1 = string1.split("");
     var array = string.split("");
     var timer;
+    var timer1;
     function frameLooper () {
         if (array.length > 0) {
             document.getElementById("text").innerHTML += array.shift();
@@ -74,6 +77,16 @@ I  am Sooraj Sivadas an undergrad in electrical engineering<div class='small-par
     
     }
     frameLooper();
+    function frameLooper1 () {
+        if (array1.length > 0) {
+            document.getElementById("text1").innerHTML += array1.shift();
+        } else {
+            clearTimeout(timer1);
+                }
+        loopTimer = setTimeout('frameLooper1()',70); /* change 70 for speed */
+    
+    }
+    frameLooper1();
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
