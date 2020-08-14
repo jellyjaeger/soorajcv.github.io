@@ -12,7 +12,6 @@ width:30px;
 .about-border
 {
     border-radius: 10px;
-    box-shadow: 15px 5px 20px rgb(218, 208, 208);
 }
 .navbar{
     background: transparent;
@@ -25,6 +24,7 @@ width:30px;
     z-index:-1;
     margin-top:-20px;
 }
+
 .intro-para
 {
     color:rgb(75, 50, 50);
@@ -47,7 +47,6 @@ width:30px;
 .images-sphere
 {
     border-radius: 50%;
-    box-shadow:5px 5px 20px rgb(218, 208, 208);
 }
 .about-heading
 {
@@ -58,10 +57,11 @@ width:30px;
 {
     font-size:30px;
     color:rgb(202, 25, 25);
-    width:100px;
-    border-bottom:5px dotted grey;
+    width:0px;
+    border-bottom:2px dashed grey;
     transition: width 1s;
     margin-bottom:20px;
+    opacity:0.7;
 }
 .education-header:hover
 {
@@ -73,7 +73,6 @@ width:30px;
     display:inline-block;
     margin-top:10px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-shadow:5px 5px 20px rgb(218, 208, 208);
 }
 .education-image
 {
@@ -87,7 +86,22 @@ width:30px;
     font-size:10px;
     color:grey;
 }
-
+.skill-container
+{
+    display:inline-block;
+    margin-top:4%;
+}
+.hobby-images
+{
+    height:30%;
+    width:30%;
+    margin-left:30%;
+    margin-top:10%;
+}
+.hobby-card
+{
+    text-align: center;
+}
 @media all and (min-width:320px)
 {
  
@@ -206,6 +220,10 @@ width:80px;
 }
 @media all and (min-width:1200px)
 {
+    .skill-container
+    {
+        margin-left:5%;
+    }
      
     .education-image
 {
@@ -273,6 +291,7 @@ width:80px;
 }
 .intro-hello
 {
+    margin-top:20%;
     font-size:150px;
    
 }
