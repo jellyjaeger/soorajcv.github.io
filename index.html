@@ -25,7 +25,7 @@
       </nav>  
       <div class='image-container intro-image img-fluid'>
       <img src="final-images/intro-image.jpg" class="intro-image img-fluid" alt="Responsive image"><div class='intro-para'>
-<div class='intro-hello'>Hello there!</div>
+<div id ='text' class='intro-hello '></div>
 I  am Sooraj Sivadas an undergrad in electrical engineering<div class='small-para'>Although i am a passionate Web developer and an artist</div>
       </div></div>
       <div class='about-me col-xs-12 col-sm-2 col-md-4'><img class='images-sphere ' src='final-images/image-about.JPG' alt = 'my-photo'></div>
@@ -59,7 +59,22 @@ I  am Sooraj Sivadas an undergrad in electrical engineering<div class='small-par
   <div class='education-container col-xs-12 col-md-5'><img class='education-image img-fluid ' src='final-images/intro-image.jpg' alt=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TKM COLLEGE OF ENGINEERING<div class='extras'>2019-23</div></div>
   <div class='education-container col-xs-12 col-md-5'><img  class='education-image img-fluid' src='final-images/intro-image.jpg' alt=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MODEL TECHNICAL HSS,KALOOR<div class='extras'>2017-19 &nbsp;&nbsp;93%</div></div>
   <div class='education-container col-xs-12 col-md-5'><img  class='education-image img-fluid' src='final-images/intro-image.jpg' alt=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DARUL ULOOM VHSS,PULLEPADY<div class='extras'>2015-27&nbsp;&nbsp;95%</div></div>
-  
+  <div id='text'></div>
+  <script>   
+    var string = "Hello There!"; /* type your text here */
+    var array = string.split("");
+    var timer;
+    function frameLooper () {
+        if (array.length > 0) {
+            document.getElementById("text").innerHTML += array.shift();
+        } else {
+            clearTimeout(timer);
+                }
+        loopTimer = setTimeout('frameLooper()',70); /* change 70 for speed */
+    
+    }
+    frameLooper();
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

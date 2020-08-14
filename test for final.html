@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='width=initial-width initial-scale=1'>
+  <title>Sooraj.t.s -portfolio</title>
+  <link rel='stylesheet' href='portfoliocss.css'>
+  <link rel='icon' type='image/svg' href="final-images/glass-icon.svg">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head> 
+<body>
+    <div id="text"></div> 
+    <script>   
+        var string = "Javascript Typing Animation"; /* type your text here */
+        var array = string.split("");
+        var timer;
+        function frameLooper () {
+            if (array.length > 0) {
+                document.getElementById("text").innerHTML += array.shift();
+            } else {
+                clearTimeout(timer);
+                    }
+            loopTimer = setTimeout('frameLooper()',70); /* change 70 for speed */
+        
+        }
+        frameLooper();
+        </script>
+</body> 
+</html>	 
