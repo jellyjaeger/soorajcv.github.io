@@ -51,7 +51,7 @@ width:30px;
 .about-heading
 {
     font-size:30px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Bebas Neue', cursive; 
 }
 .education-header
 {
@@ -90,6 +90,7 @@ width:30px;
 {
     display:inline-block;
     margin-top:4%;
+    font-family: 'Bebas Neue', cursive;
 }
 .hobby-images
 {
@@ -101,6 +102,11 @@ width:30px;
 .hobby-card
 {
     text-align: center;
+}
+.form-footer
+{
+    border-radius:10px;
+    border-top:1px dotted grey;
 }
 @media all and (min-width:320px)
 {

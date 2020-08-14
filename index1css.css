@@ -1,0 +1,42 @@
+
+
+.card-text{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:10px;
+}
+.card-flex{
+    margin-top:2em;
+  
+}
+.navbar{
+    box-shadow:5px 5px 18px grey;
+    border-radius: 10px;
+    
+}
+
+@media screen and (min-width:320px){
+    .card{
+        margin-top:20%; 
+        margin-bottom:10%;
+    }
+    .index-return{
+        width:20px;
+        height:20px;
+    }
+    .index-flex{
+        width:50%;
+    }
+    }
+@media screen and (min-width:540px){
+    
+    .card{
+        border: 2px solid black;
+        margin-left:2em;
+        margin-top:5%;
+    }
+    .index-return{
+        width:50px;
+        height:50px;
+    }
+}
+
