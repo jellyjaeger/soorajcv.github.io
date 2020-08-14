@@ -34,7 +34,7 @@ width:30px;
 }
 .small-para
 {
-    font-size:10px;
+    font-size:15px;
 }
 .about-me
 {
@@ -118,8 +118,9 @@ width:30px;
 }
     .intro-hello
     {
-        font-size:25px;
+        font-size:35px;
         color:rgb(201, 84, 41);
+        font-family: 'Bebas Neue', cursive;
     }
     .images-sphere{
         width:50%;
@@ -162,6 +163,12 @@ width:30px;
 }
 @media all and (min-width:720px)
 {
+    .intro-hello
+{
+    margin-top:20%;
+    font-size:90px;
+   
+}
     .extras{
         font-size:15px;
     }
